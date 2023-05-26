@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(3,219,191);
+    background: radial-gradient(circle, rgba(3,219,191,1) 0%, rgba(43,155,190,1) 100%);
+    font-family: 'Bitter', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navegacion{
+    Z-INDEX: 1000;
+    position: fixed;
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.cuerpo{
+    width: 45%;
+    height: 45%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    right: 50%;
+    cursor: pointer;
+}
+
+.menu span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 6px;
+    background: blue;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activa-linea1{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+.activa-linea2{
+    opacity: 0;
+    margin-left: -30px;
+}
+.activa-linea3{
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.menu-active{
+    background-color: white;
+    box-sizing: 2px 0px 5px 2px rgb(66,66,66);
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all .5s ease;
+    z-index: 1;
+    position: sticky;
+
+}
+.menu-active ul{
+    padding: 40% 0px 20px 0px;
+    list-style: none;
+}
+.menu-active li{
+    color: black;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.menu-active li:hover{
+    background-color: blue;
+    color: rgb(42,42,42);
+}
+
+.active-menu{
+    transform: translate(-600px);
+}
+
+
+
+.bibi-basket{
+   cursor: pointer;
+}
+
+.menuHamburgesa{
+    Z-INDEX: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.productos{ 
+    background-color: white;
+    width: 90%;
+    height: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: self-end;
+}

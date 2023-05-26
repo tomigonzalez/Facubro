@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilologin.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navegacion">
+      <div class="contenedor-navegacion">
+        <div class="menu" id="iconoMenu">
+          <span class="linea1 "></span>
+          <span class="linea2 "></span>
+          <span class="linea3 "></span>
+        </div>
+        <div class="contenedor-logo">
+          <img class="logo" src="./Logo/Captura de pantalla 2023-02-02 102653.png" alt=""> 
+        </div>
+        <div class="carrito-compras" id="verCarrito">
+          <i class="bibi-basket" id = "open"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bibi-basket" viewBox="0 0 16 16" color="blue">
+            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+          </svg><span id="cantidadCarrito" class="cantidad-carrito"></span></i>
+        </div>          
+      </div>
+  </nav>
+</header>
+<div class="menuHamburgesa">
+  <div class="menu-active active-menu" id="menuActive">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li>Calzado</li>
+      <li>Locales</li>
+      <li>Iniciar sesión</li>
+    </ul>
+  </div>
+  <form>
+    <label for="username">Correo electronico:</label>
+    <input type="text" id="username" name="username">
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password">
+    <label for="confirmpassword">Confirmar Contraseña:</label>
+    <input type="password" id="password" name="confirmpassword">
+    <input type="submit" value="Crear Usuario">
+  </form>
+</body>
+<footer>
+  <script src="login.js"></script>
+</footer>
+</html>

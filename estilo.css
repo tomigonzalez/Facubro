@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(3, 219, 191);
+  background: radial-gradient(
+    circle,
+    rgba(3, 219, 191, 1) 0%,
+    rgba(43, 155, 190, 1) 100%
+  );
+  font-family: "Bitter", serif;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.navegacion {
+  z-index: 1000;
+  position: fixed;
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.contenedor {
+  height: 30%;
+  width: 65%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  place-content: space-evenly;
+}
+
+.contenedor-navegacion {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cuerpo {
+  margin-top: 1%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.productos {
+  background-color: white;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: self-end;
+  margin-top: 5px;
+}
+
+.menu {
+  width: 30px;
+  height: 30px;
+  left: 50%;
+  right: 50%;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 6px;
+  background: blue;
+  transform-origin: 0px 100%;
+  transition: all 300ms;
+}
+
+.activa-linea1 {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+.activa-linea2 {
+  opacity: 0;
+  margin-left: -30px;
+}
+.activa-linea3 {
+  transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.menu-active {
+  background-color: white;
+  box-sizing: 2px 0px 5px 2px rgb(66, 66, 66);
+  width: 17%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  z-index: 1;
+  position: fixed;
+}
+.menu-active ul {
+  padding: 40% 0px 20px 0px;
+  list-style: none;
+}
+.menu-active li {
+  color: black;
+  display: block;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.menu-active li:hover {
+  background-color: blue;
+  color: rgb(42, 42, 42);
+}
+
+.active-menu {
+  transform: translate(-600px);
+}
+
+.bibi-basket {
+  cursor: pointer;
+}
+
+.menuHamburgesa {
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  width: 50%;
+  height: 40%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.card img {
+  width: 50%;
+  height: 40%;
+}
+
+.comprar {
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: blue;
+  background-color: white;
+  border-color: blue;
+  width: 40%;
+  height: 20%;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.comprar:hover {
+  background-color: blue;
+  color: white;
+}
+
+.modal-container {
+  padding: 8% 0 0 0;
+  display: flex;
+  transition: 3s;
+  width: 17%;
+  height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  transition: all 0.5s ease;
+  position: fixed;
+  left: 83%;
+}
+.is-active {
+  transform: translate(100%);
+  transition: all 0.5s ease;
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%);
+}
+
+.modal-button {
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.modal-button:hover {
+  color: white;
+  background-color: red;
+}
+
+.total-compra {
+  padding: 10px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.cantidad-carrito {
+  color: white;
+  background-color: blue;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 4px;
+  top: 37px;
+  right: 180px;
+  position: absolute;
+  display: none;
+}
+
+.texto-descript {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtrado {
+  width: 65%;
+  height: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.marcas .card__name {
+  width: 150px;
+  height: 100px; /* Establece una altura fija para cada elemento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card__name img {
+  width: 100%;
+  height: 100%;
+}
+.marcas :hover {
+  background-color: blue;
+}
+.activados {
+  background-color: blue;
+}
+
+/*///////CART//////*/
+.cart__main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+
+  overflow-x: hidden;
+}
+.contenedordeimagen {
+  width: 100%;
+  height: 110px;
+}
+
+.modal-container img {
+  width: 100%;
+  height: 100%;
+}
+.card1 {
+  margin-bottom: 13%;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+}
+.disabled {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: 1px solid #5c5b5b;
+  color: #6e6d6d;
+  background-image: transparent;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border: 1px SOLID #d7d5d5;
+
+  color: #dddcdc;
+  background-image: transparent;
+  cursor: not-allowed;
+}
+.cart__heading {
+  margin-bottom: 15%;
+  font-weight: 900;
+  color: blue;
+}
+.nav__span {
+  display: flex;
+  align-items: CENTER;
+  justify-content: center;
+  background-color: rgb(255, 149, 0);
+  border-radius: 100px;
+  width: 15px;
+  height: 15px;
+  font-size: small;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  left: 30px;
+  top: 11px;
+}

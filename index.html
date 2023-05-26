@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;300;500&family=Montserrat:wght@100;300;500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/836715cda7.js"></script>
+
+  <title>Bilard</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navegacion">
+      <div class="contenedor-navegacion">
+        <div class="menu" id="iconoMenu">
+          <span class="linea1 "></span>
+          <span class="linea2 "></span>
+          <span class="linea3 "></span>
+        </div>
+        <div class="contenedor-logo">
+          <img class="logo" src="./Logo/Captura de pantalla 2023-02-02 102653.png" alt="">
+        </div>
+        <div class="carrito-compras" id="verCarrito">
+          <span class="nav__span" id="icon-span"></span>
+          <i class="bibi-basket" id="open"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="currentColor" class="bibi-basket" viewBox="0 0 16 16" color="blue">
+              <path
+                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+            </svg><span id="cantidadCarrito" class="cantidad-carrito"></span></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="menu-active active-menu" id="menuActive">
+      <ul>
+        <li>Inicio</li>
+        <li>Calzado</li>
+        <li>Locales</li>
+        <li>Iniciar sesión</li>
+      </ul>
+    </div>
+
+    <div class="modal-container is-active" id="modal-container">
+
+      <span class="cart__heading">CARRITO</span>
+
+      <div class="cart__main">
+        <!-- <div class="card1 card--cart box-shadow">
+          <img class="card__img" src="fotos/Adidas-logo.png" alt="title" />
+
+          <div class="card__info">
+            <p class="card__name">{title}</p>
+            <p class="card__price gradient-text">$ {price}</p>
+          </div>
+
+          <div class="card__buttons">
+            <button class="btn btn--cart">-</button>
+            <span class="card__quantity">1</span>
+            <button class="btn btn--cart">+</button>
+          </div>
+        </div> -->
+
+
+      </div>
+
+      <div class="cart-total" id="cart">
+        <p>Total:</p>
+        <span class="total"></span>
+      </div>
+      <div class="btn-contain">
+        <button class="btn-buy btn">Comprar</button>
+        <button class="btn-delete btn">Vaciar carrito</button>
+      </div>
+
+    </div>
+
+
+  </header>
+
+
+
+  <div class="cuerpo">
+
+    <div class="filtrado">
+
+      <div class="marcas" data-category="DC">
+        <a class="card__name" data-category="DC">
+          <img class="card__name " src="./fotos/Logo-DC.png" data-category="DC">
+        </a>
+      </div>
+
+      <div class="marcas" data-category="New">
+        <a class="card__name" data-category="New">
+          <img class="card__name" src="./fotos/New-Balance-logo.jpg" data-category="New">
+        </a>
+      </div>
+
+      <div class="marcas" data-category="Nike">
+        <a class="card__name" data-category="Nike">
+          <img class="card__name " src="./fotos/nike-logo.png" data-category="Nike">
+        </a>
+      </div>
+
+      <div class="marcas" data-category="Adidas">
+        <a class="card__name" data-category="Adidas">
+          <img class="card__name " src="./fotos/Adidas-logo.png" data-category="Adidas">
+        </a>
+      </div>
+
+    </div>
+
+    <div class="productos" id="shop">
+
+
+    </div>
+  </div>
+
+  <footer>
+
+
+
+
+  </footer>
+  <script src="products.js"></script>
+  <script src="Navegacion.js"></script>
+  <script src="carrito.js"></script>
+</body>
+
+</html>
